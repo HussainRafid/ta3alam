@@ -1,0 +1,113 @@
+.member-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem;
+    background: linear-gradient(to right bottom, var(--background-dark), var(--background));
+}
+.member-content-container .desc {
+    width: 40%;
+}
+.member-content-container .desc h4 {
+    font-size: 1.2rem;
+    font-family: main-bold;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+.member-content-container .desc h4:after {
+    content: '';
+    width: 70px;
+    height: 1px;
+    background: var(--font);
+    margin: 0 0.3rem;
+    display: block;
+}
+.member-content-container .desc h1 {
+    background: linear-gradient(to right bottom, var(--primary-light), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-family: main-bold;
+}
+.member-content-container .desc p {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    opacity: 0.85;
+}
+.member-content-container .desc button {
+    background: linear-gradient(to right bottom, var(--primary-light), var(--primary));
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    color: var(--font);
+    margin: 0.1rem 0;
+    box-shadow: 0 0 10px var(--primary-transparent);
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.member-content-container .desc button:hover {
+    filter: brightness(107%);
+}
+.member-content-container .right-side {
+    display: flex;
+    align-items: center;
+}
+.member-content-container .image-container {
+    width: 95%;
+    height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.034);
+}
+.member-content-container .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.member-content-container .socials-container {
+    margin: 0 0.6rem;
+}
+.member-content-container .socials-container ul{
+    list-style: none;
+    padding: 0;
+}
+.member-content-container .socials-container ul li {
+    font-size: 1.2rem;
+    margin: 0.25rem 0;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.member-content-container .socials-container ul li a {
+    color: var(--font);
+    transition: 0.3s;
+}
+.member-content-container .socials-container ul li:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 5px var(--primary-transparent);
+}
+.member-content-container .socials-container ul li:hover a {
+    opacity: 1;
+    color: var(--primary);
+}
+
+@media (max-width:768px){
+    .member-content-container {
+        flex-direction: column-reverse;
+    }
+    .member-content-container .image-container {
+        width: 100%;
+    }
+    .member-content-container .desc {
+        width: 95%;
+        margin: 1rem 0;
+    }
+    .member-content-container .desc h4 {
+        font-size: 1rem;
+    }
+    .member-content-container .desc h1 {
+        font-size: 2.2rem;
+    }
+}

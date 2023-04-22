@@ -1,0 +1,427 @@
+.admin-page-container {
+    background: linear-gradient(to right bottom, var(--bg-dark), var(--bg));
+    padding: 5rem 3rem;
+}
+
+.admin-page-container section h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-family: main-bold;
+}
+.admin-page-container section h1 span {
+    color: var(--primary);
+}
+.admin-page-container  .tabs-container ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(228, 228, 228);
+    width: fit-content;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 10px var(--shadow);
+}
+.admin-page-container  .tabs-container ul li {
+    padding: 1rem 2rem;
+    font-size: .9rem;
+    background:rgb(250, 250, 250);
+    transition: 0.3s;
+    opacity: 0.85;
+}
+.admin-page-container  .tabs-container ul li:hover {
+    background: rgb(246, 246, 246);
+}
+.admin-page-container  .tabs-container ul li a {
+    color: var(--font) !important;
+}
+
+.admin-page-container .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.admin-page-container .add-member .member-image {
+    width: 35%;
+    height: 550px;
+    border-radius: 7px;
+    overflow: hidden;
+    vertical-align: middle;
+    box-shadow: 0 0 10px var(--shadow);
+    position: relative;
+}
+.admin-page-container .add-member .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.admin-page-container .add-member .member-image .upload-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffc72ce5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.admin-page-container .add-member .member-image .upload-message h1 {
+    font-size: 3rem;
+}
+.admin-page-container .add-member .member-image .upload-message h3 {
+    opacity: 0.7;
+    font-size: 1.4rem;
+}
+.admin-page-container .add-member .form-container {
+    width: 65%;
+    padding: 2rem;
+}
+.admin-page-container .add-member .form-container :is(input[type = 'text'],input[type = 'file'], textarea) {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgb(230, 230, 230);
+    outline: none;
+}
+.admin-page-container .add-member .form-container :is(input[type = 'text']:hover,input[type = 'file']:hover, textarea:hover) {
+    border: 1px solid rgb(216, 216, 216);
+}
+.admin-page-container .add-member .form-container :is(input[type = 'text']:focus,input[type = 'file']:focus, textarea:focus) {
+    border: 1px solid var(--primary);
+}
+.admin-page-container .add-member .form-container textarea {
+    height: 150px;
+}
+.admin-page-container .add-member .form-container div {
+    margin: 1.5rem 0;
+}
+.admin-page-container .add-member .form-container label {
+    display: block;
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+.admin-page-container .add-member .form-container :is(.create, .add) {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+.admin-page-container .add-member .form-container .create {
+    color: var(--font);
+    background: linear-gradient(to right bottom, var(--primary-light), var(--primary));
+    box-shadow: 0 0 10px var(--primary-transparent);
+}
+.admin-page-container .add-member .form-container .create:hover {
+    filter: brightness(107%);
+}
+.admin-page-container .add-member .form-container .add {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.admin-page-container .add-member .form-container .add:hover {
+    background: var(--primary);
+    color: var(--font);
+}
+
+.delete-members .content {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 15px;
+    justify-content: center;
+}
+
+ .delete-members .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: linear-gradient(to right bottom, var(--bg-dark), var(--bg));
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgb(226, 226, 226);
+  }
+  
+   .delete-members .member .member-img {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+   .delete-members .member .member-img img {
+    transition: ease-in-out 0.3s;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+   .delete-members .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   .delete-members .member .social a {
+    transition: color 0.3s;
+    margin: 0 3px;
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    background: var(--primary);
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   .delete-members .member .social a:hover {
+    background: var(--primary-light);
+  }
+  
+   .delete-members .member .social i {
+    font-size: 16px;
+    line-height: 0;
+  }
+  
+   .delete-members .member .member-info {
+    padding: 25px 15px;
+  }
+  
+   .delete-members .member .member-info .main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+   .delete-members .member .member-info h4 {
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: var(--font);
+    font-family: main-bold;
+  }
+  
+   .delete-members .member .member-info span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--font);
+    opacity: 0.6;
+  }
+  
+   .delete-members .member .member-info p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0.3rem 0;
+  }
+  
+   .delete-members .member:hover .social {
+    opacity: 1;
+    bottom: 15px;
+  }
+   .delete-members .member:hover .member-img  img{
+    filter: brightness(80%);
+  }
+  
+ .admin-page-container .delete-btn {
+    color: #f4f4f4;
+    background: linear-gradient(to right bottom,#df3b3b, #df2222);
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    border-radius: 4px;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+ }
+ .admin-page-container .delete-btn:hover {
+    filter: brightness(105%);
+ }
+
+ 
+.add-review .review-demo {
+    box-sizing: content-box;
+    padding: 30px 30px 0 30px;
+    margin: 30px 15px;
+    text-align: center;
+    min-height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgb(226, 226, 226);
+    background: linear-gradient(to right bottom, var(--bg), var(--bg-dark));
+    width: 25%;
+    text-align: center;
+  }
+  
+.admin-page-container .review-demo .testimonial-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 0 auto;
+  }
+  
+.admin-page-container .review-demo h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #111;
+  }
+  
+.admin-page-container .review-demo h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+  }
+  
+.admin-page-container .review-demo p {
+    margin: 0 auto 15px auto;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0.7rem 0;
+  }
+  
+ .add-review .form-container {
+    width: 75%;
+ }
+ .add-review .form-container div {
+    margin: 1rem 0;
+ }
+ .add-review .form-container label {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0.3rem 0;
+ }
+ .add-review .form-container :is(input[type = 'text'], textarea){
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgb(230, 230, 230);
+    outline: none;
+ }
+ .add-review .form-container textarea {
+    height: 150px;
+ }
+ .add-review .form-container :is(input[type = 'text']:hover, textarea:hover){
+    border: 1px solid rgb(216, 216, 216);
+ }
+ 
+ .add-review .form-container :is(input[type = 'text']:focus, textarea:focus){
+    border: 1px solid var(--primary)
+ }
+ .add-review .form-container input[type = 'submit']{
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: var(--font);
+    background: linear-gradient(to right bottom, var(--primary-light), var(--primary));
+    transition: 0.3s;
+    box-shadow: 0 0 10px var(--primary-transparent);
+    margin: 0.4rem 0;
+ }
+ .add-review .form-container input[type = 'submit']:hover {
+    filter: brightness(107%);
+ }
+
+ .admin-page-container .testimonials-slider {
+    margin: 2rem 0;
+ }
+
+
+ .courses-managment {
+    margin: 2rem 0;
+ }
+ .courses-managment form {
+    width: 100%;
+ }
+ .courses-managment form .inputs-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: center;
+    gap: 15px;
+ }
+ .courses-managment form .inputs-container input {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgb(230, 230, 230);
+    outline: none;
+ }
+ .courses-managment form .inputs-container input:hover {
+    border: 1px solid rgb(216, 216, 216);
+ }
+ .courses-managment form .inputs-container input:focus {
+    border: 1px solid var(--primary);
+ }
+ .courses-managment form input[type = 'submit']{
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: var(--font);
+    background: linear-gradient(to right bottom, var(--primary-light), var(--primary));
+    transition: 0.3s;
+    box-shadow: 0 0 10px var(--primary-transparent);
+    margin: 1rem 0;
+ }
+ .courses-managment form input[type = 'submit']:hover {
+    filter: brightness(108%);
+ }
+
+.courses-managment table {
+    border-radius: 14px;
+    background: linear-gradient(to right bottom,var(--bg), var(--bg-dark));
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.055);
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.courses-managment table thead {
+    padding: 1rem ;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    background-color: rgb(247, 247, 247);
+}
+.courses-managment table :is(th, td){
+    font-size: 0.9rem;
+    border-right: 1px solid rgb(240, 240, 240);
+}
+.courses-managment table th {
+    color: var(--primary);
+    padding: 1rem;
+}
+.courses-managment table tr:nth-child(even){
+    background-color: rgb(247, 247, 247);
+}
+.courses-managment table td {
+    padding: 1.4rem;
+}
+.courses-managment table td button {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.courses-managment table .active button {
+    color:rgb(38, 170, 55)
+}
+.courses-managment table .inactive button{
+    color:rgb(170, 38, 38)
+}

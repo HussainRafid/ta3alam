@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/Header.ejs') %>
+
+<body class="home-page">
+    <%- include('partials/Navbar.ejs') %>
+  <!-- End Header -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span> Ta3alm</span></h2>
+          <p class="animate__animated fanimate__adeInUp">Welcome to Ta3alm English, where learning is made easy and enjoyable. Our project was born out of a passion for language learning and a desire to help others improve their linguistic skills.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Join a Community <span>that Cares</span></h2>
+          <p class="animate__animated animate__fadeInUp">At Ta3alm English, we're not just about language learning - we're about building a community. We strive to create a safe, welcoming, and healthy environment for learners to explore and grow.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Join Us</a>
+        </div>
+      </div>
+
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos=" fade-up">
+          <h2>About</h2>
+          <p><span>Who</span> Are We?</p>
+        </div>
+
+        <div class="row content" data-aos="fade-up">
+          <div class="col-lg-6">
+            <p>
+              Ta3alm English, where learning is made easy and enjoyable. Our project was born out of a passion for language learning and a desire to help others improve their linguistic skills. As a group of students, we understand the challenges of mastering a new language and the importance of having a supportive community to guide you along the way. That's why we've created a platform that offers engaging resources, personalized support, and a vibrant community of learners. Whether you're a beginner or an advanced learner, Ta3alm English is here to help you achieve your language goals. Join us today and embark on an exciting journey of learning and growth.
+            </p>
+            <a href="#" class="btn-learn-more">Join</a>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <ul>
+              <li><i class="ri-check-double-line"></i> Certified trainers: All our trainers are certified experts in language instruction.</li>
+              <li><i class="ri-check-double-line"></i> Customized teaching materials: We prepare our teaching materials based on your individual needs.</li>
+              <li><i class="ri-check-double-line"></i> Judgment-free environment: We prioritize creating a welcoming, non-judgmental environment for our learners.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3" data-aos="zoom-in">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+              <i class="bi bi-sort-alpha-up-alt"></i>
+              <h4 class="d-none d-lg-block">English Basics Course</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+              <i class="bi bi-briefcase"></i>
+              <h4 class="d-none d-lg-block">English for Business</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+              <i class="bi bi-person-workspace"></i>
+              <h4 class="d-none d-lg-block">Professional English for Job Interviews</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+              <i class="bi bi-person-video3"></i>
+              <h4 class="d-none d-lg-block">English Convention Course</h4>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>English <span>Basics</span> Course</h3>
+                <p>
+                  Our "English Basics Course" is designed to help beginners learn English from the ground up.
+
+                  You'll learn essential vocabulary, grammar, and conversational skills that will enable you to communicate effectively in a variety of everyday situations.
+                  
+                  The course is taught by experienced instructors who understand the challenges of learning a new language and can provide valuable guidance and support.
+                  
+                  We use a variety of engaging materials and activities to make learning English fun and enjoyable, including games, songs, and multimedia resources.
+                  
+                  Our "English Basics Course" is tailored to your individual needs and goals, so you can progress at your own pace and feel confident in your language skills.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="/images/basics.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>English For <span>Business</span> Course</h3>
+                <p>
+                  Our English for business course is designed to help professionals develop the language skills they need to succeed in today's global workplace.
+
+                  You'll learn the specialized vocabulary and communication skills necessary for a variety of business contexts, including meetings, presentations, negotiations, and more.
+                  
+                  The course is taught by experienced business professionals who understand the demands of the corporate world and can provide valuable insights and guidance.
+                  
+                  We use real-world case studies and scenarios to help you apply your language skills to practical situations.
+                  
+                  Our English for business course is tailored to your specific needs and goals, so you can feel confident that you're making progress towards your professional objectives.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="/images/business.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Professional English For <span>Job Interviews</span></h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                </ul>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="/images/interviews.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>English <span>Convention</span> Course</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="/images/conference.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row" data-aos=" fade-up">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3><span>Join</span> us now!</h3>
+            <p>join us today and let's work towards a brighter future together!</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Join Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos=" fade-up">
+          <h2>Services</h2>
+          <p>What Do We <span>Offer?</span></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-right">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="220">
+              <div class="icon"><i class="bi bi-book"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+            <div class="icon-box" data-aos="fade-left" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="fade-right" data-aos-delay="150">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="220">
+              <div class="icon"><i class="bi bi-globe"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="fade-left" data-aos-delay="150">
+              <div class="icon"><i class="bi bi-clock"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title" data-aos=" fade-up">
+          <h2>Testimonials</h2>
+          <p><span>What</span> they are saying about us</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/images/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/images/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                   
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    
+                </p>
+               
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/images/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                   
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/images/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                   
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/images/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                   
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos=" fade-up">
+          <h2>Team</h2>
+          <p>Our <span>Hardworking</span> Team</p>
+        </div>
+
+        <div class="team-row">
+
+         <% members.forEach((member) => {%>
+          <div class="">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                    <img src=<%=member.src %> class="img-fluid" alt=<%=member.name %>>
+                    <div class="social">
+                      <% member.socials.filter((social) => social.link !== '').forEach((social) => { %>
+                        <a href=<%=social.link%>><i class="bi bi-<%=social.name%>"></i></a>
+                      <% }) %>                    
+                    </div>
+                </div>
+                <div class="member-info">
+                    <div class="main-info">
+                      <h4><%=member.name %></h4>
+                      <span><%=member.specialization %></span>
+                    </div>
+                    <p class="desc"><%= member.desc.slice(0, 100) %>...</p>
+                    <a href='/team/<%=member._id%>' class="more-btn">
+                      <div>
+                          <button class="btn-1">More</button>
+                          <button class="btn-2">More</button>
+                      </div>
+                    </a>
+                </div> 
+              </div> 
+            </div>
+
+            <% }) %>
+            <div class="">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                    <img src='images/team/ali.jpg' class="img-fluid">
+                    <div class="social">      
+                    </div>
+                </div>
+                <div class="member-info">
+                    <div class="main-info">
+                      <h4>asdaS</h4>
+                      <span>SADASD</span>
+                    </div>
+                    <p class="desc">sadasdasdasdasd</p>
+                    <a href='/team/' class="more-btn">
+                      <div>
+                          <button class="btn-1">More</button>
+                          <button class="btn-2">More</button>
+                      </div>
+                    </a>
+                </div> 
+              </div> 
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos=" fade-up">
+          <h2>Contact</h2>
+          <p><span>Contact</span> Us</p>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="info">
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <%- include("partials/Footer.ejs") %>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/script/TeamData.js"></script>
+  <script src="/style/aos/aos.js"></script>
+  <script src="/style/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="/style/glightbox/js/glightbox.min.js"></script>
+  <script src="/style/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/style/swiper/swiper-bundle.min.js"></script>
+  <script src="/style/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/script/main.js"></script>
+
+</body>
+
+</html>
